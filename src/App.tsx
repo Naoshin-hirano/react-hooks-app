@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Cat } from "./components/Cat";
+import { PureCat } from "./components/Cat";
 
 function App() {
     const [cats, setCats] = useState(["Biscuit", "Jungle", "Outlaw"]);
@@ -8,7 +8,7 @@ function App() {
         <>
             {cats &&
                 cats.map((name: string, i: number) => {
-                    return <Cat key={i} name={name} />;
+                    return <PureCat key={i} name={name} />;
                 })}
             <button
                 onClick={() => {
